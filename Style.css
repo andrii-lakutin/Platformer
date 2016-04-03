@@ -1,0 +1,27 @@
+#canvas{
+	border:1px solid #000;
+    background: black;
+    background-size: cover;
+    position: absolute;
+    left: 180px;
+    top: 70px;
+}
+
+#SMBmodel {
+	display: none;
+
+}
+
+#canvasofmodel{
+	border:1px solid #000;
+	background-color: transparent;
+	display: none;
+}
+#brick{
+	display: none;
+}
+
+body{
+	background: #990100;
+}
+

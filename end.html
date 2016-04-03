@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Final</title>
+    <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+
+    <style type="text/css">
+    *{
+        transition: all 1s;
+        font-family: 'Roboto', sans-serif;
+    }
+
+    body {
+        background: url(img/bgg.jpg) no-repeat;
+        background-position:400px 50px;  
+        background-color: #990100;
+          }
+
+    .start{
+        border: 3px solid white;
+        width: 500px;
+        height: 100px;
+        color: white;
+        font-size: 60px;
+       text-align: center;
+       padding-top: 20px;
+       padding-left: 0px;
+       position: absolute;
+       top: 20px;
+       left: 700px;
+
+    }
+
+    .startup{
+        transform: rotateY(-360deg) rotateZ(20deg);
+        color: black;
+        background-color: white;
+        border: 3px solid black;
+        font-size: 50px;
+        top: 300px;
+        padding-top: 35px;
+        width: 400px;
+        height: 100px;
+        left: 150px;
+    }
+
+    </style>
+  
+</head>
+<body>
+<a href="html.html"><div id="start" class="start">START AGAIN</div></a>
+<script type="text/javascript">
+window.onload=function() 
+{ 
+    var start = document.getElementById('start');
+
+    start.setAttribute("class", "start startup");
+    
+};
+                  
+                  
+    
+
+</script>
+
+</body>
+</html>

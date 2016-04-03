@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+	<title>Final</title>
+    <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+
+    <style type="text/css">
+    *{
+    	transition: all 0.9s;
+    	font-family: 'Roboto', sans-serif;
+    }
+
+    body {
+    	background: url(img/bgg.jpg) no-repeat;
+    	background-position:400px 50px;  
+    	background-color: #990100;
+    	  }
+
+    .start{
+    	border: 3px solid white;
+    	width: 300px;
+	    height: 100px;
+	    color: white;
+	    font-size: 60px;
+	   text-align: center;
+	   padding-top: 20px;
+	   padding-left: 0px;
+	   position: absolute;
+	   top: 200px;
+	   left: 150px;
+
+    }
+
+    .start:hover{
+    	transform: rotateY(-360deg) rotateZ(20deg);
+    	color: black;
+    	background-color: white;
+    	border: 3px solid black;
+    	font-size: 80px;
+    	padding-top: 10px;
+    	width: 400px;
+
+    }
+
+    .info{
+    	 
+    	border: 3px solid white;
+    	width: 300px;
+	    height: 100px;
+	    color: white;
+	    font-size: 60px;
+	   text-align: center;
+	   padding-top: 20px;
+	   padding-left: 0px;
+	   position: absolute;
+	   top: 400px;
+	   left: 150px;
+	   cursor: pointer;
+
+    }
+
+    .startmoved{
+       top: 50px;
+	   left: 1000px;
+
+    }
+    .infoclicked{
+    	top: 50px;
+    	width: 500px;
+    	left: 50px;
+
+
+    }
+    .infotext{
+    	display: none;
+    	text-align: center;
+    	color: #990100;
+
+    }
+
+    span{
+    	font-size: 80px;
+    	color: #FF7F00;
+    }
+    
+    .infotextvisible{
+    	display: block;
+    	color: white;
+    	position: absolute;
+    	top: 200px;
+    	left: 50px;
+    	width: 500px;
+    	height: 300px;
+    	font-size: 60px;
+    	text-align: center;
+    }
+
+    </style>
+</head>
+<body>
+<a href="html.html"><div id="start" class="start">START</div></a>
+<div id="info" class="info">INFO</div>
+<div id="infotext" class="infotext">Collect the coins.</br></br>Move by &larr; &uarr; &rarr; </br></br><span>HAVE FUN</span></div>
+<script type="text/javascript">
+window.onload=function() 
+{ 
+	var info = getElementById('info');
+	var start = getElementById('start');
+	var infotext = getElementById('infotext');
+
+};
+
+	info.onclick = function (event) {
+	              start.setAttribute("class", "start startmoved");			//Перезаписывает или дополняет?
+	              info.setAttribute("class", "info infoclicked");
+	              infotext.setAttribute("class", "infotextvisible");
+            };
+	
+
+</script>
+
+</body>
+</html>
